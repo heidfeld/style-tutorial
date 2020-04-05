@@ -1,0 +1,19 @@
+.flex-parent1 {
+    width: 500px;
+    display: flex;
+}
+
+.flex-parent2 {
+    width: 500px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.flex-child1 {
+    margin: 10px;
+}
+
+.flex-child2 {
+    margin: 10px;
+    flex: 1 auto;
+}

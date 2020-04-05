@@ -1,0 +1,21 @@
+.margin-parent1 {
+    width: 500px;
+    display: flex;
+}
+
+.margin-parent2 {
+    width: 500px;
+    display: flex;
+    padding: 50px;
+}
+
+.margin-parent3 {
+    width: 500px;
+    display: flex;
+    margin: 50px;
+}
+
+.margin-child1 {
+    width: 50px;
+    margin-left: 10px;
+}
