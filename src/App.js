@@ -8,6 +8,7 @@ import {
 
 import Flex from './components/Display/Flex/Flex';
 import Margin from './components/Margin/Margin';
+import TabIndex from './components/TabIndex/TabIndex';
 
 import './App.css';
 
@@ -27,6 +28,9 @@ export default function App() {
                             <li>
                                 <Link to="/margin">Margin</Link>
                             </li>
+                            <li>
+                                <Link to="/tabIndex">TabIndex</Link>
+                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -38,6 +42,9 @@ export default function App() {
                         </Route>
                         <Route path="/margin">
                             <Margin/>
+                        </Route>
+                        <Route path="/tabIndex">
+                            <TabIndex/>
                         </Route>
                         <Route path="/">
                             <Home/>
@@ -51,8 +58,4 @@ export default function App() {
 
 function Home() {
     return <h2>Home</h2>;
-}
-
-function About() {
-    return <h2>About</h2>;
 }
