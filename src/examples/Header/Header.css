@@ -1,0 +1,42 @@
+.yt-header {
+    width: 100%;
+    display: flex;
+    background-color: lightgray;
+    flex-direction: row;
+}
+
+.yt-header__left {
+    align-items: center;
+    display: flex;
+}
+
+.yt-header__center {
+    align-items: center;
+    display: flex;
+}
+
+.yt-header__right {
+    align-items: center;
+    display: flex;
+}
+
+#yt-logo-container {
+    width: 100px;
+    height: 20px;
+    align-items: center;
+    display: flex;
+}
+
+#yt-search-container {
+    min-width: 400px;
+    height: 40px;
+    align-items: center;
+    display: flex;
+}
+
+#yt-user-container {
+    width: 100px;
+    height: 30px;
+    align-items: center;
+    display: flex;
+}
