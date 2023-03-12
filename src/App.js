@@ -1,7 +1,6 @@
-import React from "react";
 import {
     BrowserRouter as Router,
-    Switch,
+    Routes,
     Route,
     Link
 } from "react-router-dom";
@@ -11,6 +10,7 @@ import Margin from './components/Margin/Margin';
 import TabIndex from './components/TabIndex/TabIndex';
 
 import './App.css';
+import Header from "./examples/Header/Header";
 
 export default function App() {
     return (
@@ -18,6 +18,7 @@ export default function App() {
             <div className={'wholeHeight'}>
                 <div className={'leftMenuWrapper wholeHeight'}>
                     <nav>
+                        Style Tutorial
                         <ul>
                             <li>
                                 <Link to="/">Home</Link>
@@ -32,24 +33,23 @@ export default function App() {
                                 <Link to="/tabIndex">TabIndex</Link>
                             </li>
                         </ul>
+                        Style Examples
+                        <ul>
+                            <li>
+                                <Link to="/example/header">Create Header</Link>
+                            </li>
+                        </ul>
                     </nav>
                 </div>
 
                 <div className={'container wholeHeight'}>
-                    <Switch>
-                        <Route path="/display/flex">
-                            <Flex/>
-                        </Route>
-                        <Route path="/margin">
-                            <Margin/>
-                        </Route>
-                        <Route path="/tabIndex">
-                            <TabIndex/>
-                        </Route>
-                        <Route path="/">
-                            <Home/>
-                        </Route>
-                    </Switch>
+                    <Routes>
+                        <Route path="/example/header" element={<Header/>}/>
+                        <Route path="/display/flex" element={<Flex/>}/>
+                        <Route path="/margin" element={<Margin/>}/>
+                        <Route path="/tabIndex" element={<TabIndex/>}/>
+                        <Route path="/" element={<Home/>}/>
+                    </Routes>
                 </div>
             </div>
         </Router>
